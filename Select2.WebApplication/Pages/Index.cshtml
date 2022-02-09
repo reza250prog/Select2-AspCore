@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<link href="~/lib/select2/css/select2.min.css" rel="stylesheet" />
+
+<div class="form-group">
+    <label>Example of AJAX Select and pagination</label>
+    <select name="ajaxSelect2" class="form-control" id="ajaxSelect2">
+    </select>
+</div>
+
+@section Scripts
+{
+<script src="~/lib/select2/js/select2.min.js"></script>
+<script asp-append-version="true" src="~/lib/select2/js/i18n/fa.min.js"></script>
+<script asp-append-version="true" src="~/js/select2.js"></script>
+}
